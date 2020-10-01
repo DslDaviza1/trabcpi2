@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>INGRESSOS</title>
+		<meta charset="utf-8" /> <!--ISO-8859-1-->
+		<script type="text/javascript">
+    		function exibirMensagem()
+    		{
+    		    var data = new Date();
+    		    alert(data.toString());
+    		}
+    	</script>
+		<meta name="author" content="Davi Luna" />
+		<meta name="keywords" content="cinema, filme, lançamentos, ranking, series, flix" />
+		<meta name="description" content="SIte que reúne os principais lançamentos de filmes e o ranking dos mais assistidos" />
+		<script type="text/javascript">
+			var bemvindo;
+			bemvindo = "Seja Bem Vindo ao site de Ingressos";
+			alert(bemvindo);
+		</script>
+		<script type="text/javascript">
+			var num1 = Number (prompt('Informe seu filme:'))
+		</script>
+		<style>
+			#grad1 {
+  			height: 200px;
+  			background-image: linear-gradient(to right, rgba(178,34,34), rgba(255,0,0,1));
+			}
+			#ad{
+				background-color: rgba(255,160,122);
+
+			}
+		</style>	
+</head>
+	
+<body link="#e53935" alink="#e53935" vlink="#e53935" id="ad" >
+
+		<div id="grad1"></div>
+		<button id="btn" onclick="exibirMensagem();">Relógio</button>
+	<center>
+		<font size="4" face="Rockwell">
+			<a href="#">HOME</a>
+		<hr />
+	</center>
+	
+
+
+
+	<font color="#e53935" size="6" face="OCR A Extended">
+		<center><H1>FILMESPRIME</H1></center>
+		<h2>PÁGINA DE INGRESSOS</h2>
+	</font>
+
+	<form name="" action="" method=""> <!--precisa de uma outra linguagem de programação para enviar os dados-->
+		<p><label for="nome">Nome:</label>
+		<input type="text" name="nome" id="nome" size="54" maxlength="50" autofocus /></p>
+
+		<p><label for="login">Login:</label>
+		<input type="text" name="login" id="login" />
+
+		<label for="senha">Senha:</label>
+		<input type="password" name="senha" id="senha" /></p>
+
+		<p><label for="email">E-mail:</label>
+		<input type="email" name="email" id="email" required />
+
+		<label for="celular">Celular:</label>
+		<input type="tel" name="celular" id="celular" placeholder="(99)99999-9999" pattern="^\(?\d{2}\)\d{5}[-\s]d{4}.*?$" /></p>
+
+		<p><label for="data">Data:</label>
+		<input type="date" name="data" id="data" />
+
+		<label for="hora">Hora:</label>
+		<input type="time" name="hora" id="hora" />
+
+		<label for="qtde">Quantidade:</label>
+		<input type="number" name="qtde" id="qtde" min="0" max="10" step="1" /></p>
+
+		<fieldset>
+			<legend>Sala</legend>
+			<input type="radio" name="sala" id="2d" value="2d" />
+			<label for="2d">2D</label><br />
+
+			<input type="radio" name="sala" id="3d" value="3d" />
+			<label for="3d">3D</label><br />
+
+			<input type="radio" name="sala" id="4d" value="4d" />
+			<label for="4d">4D</label><br />
+
+			<input type="radio" name="sala" id="3dxd" value="3dxd" />
+			<label for="3dxd">3D XD</label><br />
+		</fieldset>
+
+		<fieldset>
+			<legend>Gênero</legend>
+			<input type="checkbox" name="genero" id="comedia" value="comedia">
+			<label for="comedia">Comédia</label><br />
+
+			<input type="checkbox" name="genero" id="terror" value="terror">
+			<label for="terror">Terror</label><br />
+
+			<input type="checkbox" name="genero" id="Ficçãocientifica" value="Ficçãocientifica">
+			<label for="Ficçãocientifica">Ficção Científica</label><br />
+
+			<input type="checkbox" name="genero" id="romance" value="romance">
+			<label for="romance">Romance</label><br />
+		</fieldset>
+
+		<label for="comentario">Comentário</label><br />
+		<textarea name="comentario" id="comentario" cols="100" rows="5"></textarea>
+
+
+<br /><br /><br /><br />
+		<input type="submit" name="btn-comprar" value="COMPRAR" />
+		<input type="reset" name="btn-cancela" value="CANCELAR" />
+	</form>
+
+
+
+
+
+</body>
+</html>
